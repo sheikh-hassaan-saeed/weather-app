@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(15deg, #e7f1fa, #61b4fc);
+    height: 100vh;
+}
+
+.card {
+    margin: 60px auto;
+    padding: 25px 20px;
+    color: #eeedf2;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    width: 90%;
+    max-width: 470px;
+    background-color: #0b121e;
+    text-align: center;
+    height: 600px;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search input {
+    padding: 16px 25px;
+    margin-right: 16px;
+    margin-left: 6px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    flex: 1;
+    background-color: #243245;
+    color: white;
+    font-size: 25px;
+}
+
+input::placeholder {
+    color: rgb(205, 205, 205);
+    font-size: 20px;
+}
+
+
+.search button {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background-color: #243245;
+}
+
+.search button img {
+    width: 16px;
+    filter: brightness(2);
+
+}
+
+.weather-icon {
+    width: 170px;
+    margin-top: 30px;
+}
+
+.weather h1 {
+    font-size: 70px;
+    font-weight: 500;
+}
+
+.weather h2 {
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: -15px;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+
+}
+
+.col img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.humidity {
+    font-size: 25px;
+    margin-top: -6px;
+}
+
+.wind {
+    font-size: 23px;
+    margin-top: -6px;
+}
+
+.box1 {
+    background-color: #243245;
+    padding: 20px;
+    border-radius: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.box2 {
+    background-color: #243245;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.error {
+    font-size: 30px;
+    margin-top: 30px;
+    text-align: center;
+    display: none;
+}
+
+@media only screen and (max-width: 480px) {
+    .search input {
+        width: 100px;
+    }
+
+    .search button {
+        width: 50px;
+        height: 50px;
+    }
+
+    .box1 {
+        width: 120px;
+        height: 80px;
+    }
+
+    .box2 {
+        width: 120px;
+        height: 80px;
+    }
+
+    .wind {
+        font-size: 15px;
+    }
+
+    .humidity {
+        font-size: 15px;
+    }
+
+    .humidity-pic {
+        display: none;
+    }
+
+    .wind-pic {
+        display: none;
+    }
+}
